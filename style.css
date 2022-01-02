@@ -359,18 +359,9 @@ template {
   box-sizing: border-box;
 }
 
-/** 
+
+/** Main page uses Flexbox 
 ============================================================================= */
-
-header {
-  text-align: center;
-  border: solid 1px red;
-}
-
-footer {
-  height: 300px;
-  border: solid 1px red;
-}
 
 main {
   display: flex;
@@ -378,26 +369,161 @@ main {
 main > article {
   order: 2;
   min-width: 12em;
-  height: 600px;
+  height: ;
   flex: 1;
-  border: solid 1px red;
+  
 }
 main > nav {
   order: 1;
-  width: 290px;
-  border: solid 1px red;
+  width: 380px;
+  background-color: rgba(55, 55, 55, 0.797);
+  background-image: url(./img/cool-background.png);
 }
+
+/*
 main > aside {
   order: 3;
-  width: 200px;
+  width: 380px;
+  border: solid 1px red;
+  background-image: url(./img/cool-background.png);
+}
+*/
+
+
+
+
+
+
+@font-face {
+  font-family: Whitney SSm Book;
+  src: url(Whitney\ SSm\ Book.ttf));
+}
+
+
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  margin-left: 150px;
+}
+
+.sec-head {
+  font-family: 'Permanent Marker', cursive;
+  margin-left: 100px;
+  text-align: ;
+}
+
+.intro {
+  font-family: 'Whitney SSm Book';
+  font-size: 21px;
+  margin-left: 100px;
+  margin-right: 350px;
+  margin-top: 50px;
+  text-align: justify;
+  color: rgb(102, 102, 102);
+  padding-bottom: 25px;
+  border-bottom: solid #9799a7 4px;
+}
+
+.side-heading {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3rem;
+  color: #fff;
+  margin-top: 35px;
+  margin-left: 20px;
+}
+
+footer {
+  height: 300px;
   border: solid 1px red;
 }
 
+
+
+/** Nav side links
+============================================================================= */ 
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 80px;
+  margin-left: 15px;
+  font-family: 'Merienda', cursive;, Geneva, Verdana, sans-serif;
+}
+
 li {
-  list-style-type: none;
-  line-height: 40px;
+  padding-right: 1.5em;
+  height: 50px;
+  font-size: 20px;
+  color: #9799a7;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
+
+li a:hover {
+  color: #2db34a;
+}
+
+/** Main links
+============================================================================= */
+
+
+.main-links {
+  display: flex;
+  padding-top: 50px;
+  margin-left: 80px;
+  color: whitesmoke;
+  }
+
+.main-links > .main-list-left {
+  order: 1;
+  width: 500px;
+  
+
+}
+
+.main-links > .main-list-right {
+  order: 2;
+  width: 380px;
+}
+
+
+
+
+ol {
+  max-width: 350px;
+  counter-reset: my-awesome-counter;
+  list-style: none;
+  padding-left: 60px;
+  font-family: 'Whitney SSm Book';
+}
+ol li {
+  margin: 0 0 0.5rem 0;
+  counter-increment: my-awesome-counter;
+  position: relative;
+  margin-bottom: 40px;
+}
+ol li::before {
+  content: counter(my-awesome-counter);
+  color: #fff;
+  font-size: 1.9rem;
+  font-weight: bold;
+  position: absolute;
+  --size: 40px;
+  left: calc(-1 * var(--size) - 10px);
+  line-height: var(--size);
+  width: var(--size);
+  height: var(--size);
+  top: 0;
+  transform: rotate( 0deg);
+  background: #9799a7;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 1px 1px 0 #999;
+}
+
+
+
+
