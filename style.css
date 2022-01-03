@@ -466,15 +466,62 @@ li a:hover {
   color: #2db34a;
 }
 
+
+/** Main Images
+============================================================================= */
+
+.img-container {
+  margin-left: 110px;
+  margin-top: 30px;
+
+}
+
+.main-logo-1 {
+  width: 200px;
+  height: auto;
+}
+
+.main-logo-2 {
+  width: 140px;
+  height: auto;
+  margin-top: px;
+
+}
+
+.main-logo-3 {
+  margin-left: 155px;
+  width: 100px;
+  height: auto;
+}
+
+.main-logo-4 {
+  width: 90px;
+  height: auto;
+}
+
+.main-logo-5 {
+  width: 100px;
+  height: auto;
+}
+
+.main-logo-6 {
+  width: 120px;
+  height: auto;
+}
+
+
 /** Main links
 ============================================================================= */
 
 
 .main-links {
   display: flex;
-  padding-top: 50px;
-  margin-left: 80px;
-  color: whitesmoke;
+  padding-top: 20px;
+  margin-left: 100px;
+  color: #9799a7;
+  padding-bottom: 40px;
+  border-bottom: solid #9799a7 4px;
+  width: 979px;
   }
 
 .main-links > .main-list-left {
@@ -486,44 +533,16 @@ li a:hover {
 
 .main-links > .main-list-right {
   order: 2;
-  width: 380px;
+  width: 450px;
 }
 
 
-
-
-ol {
-  max-width: 350px;
-  counter-reset: my-awesome-counter;
-  list-style: none;
-  padding-left: 60px;
-  font-family: 'Whitney SSm Book';
-}
-ol li {
-  margin: 0 0 0.5rem 0;
-  counter-increment: my-awesome-counter;
-  position: relative;
-  margin-bottom: 40px;
-}
-ol li::before {
-  content: counter(my-awesome-counter);
-  color: #fff;
-  font-size: 1.9rem;
-  font-weight: bold;
-  position: absolute;
-  --size: 40px;
-  left: calc(-1 * var(--size) - 10px);
-  line-height: var(--size);
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  transform: rotate( 0deg);
-  background: #9799a7;
-  border-radius: 50%;
-  text-align: center;
-  box-shadow: 1px 1px 0 #999;
+.main-links li {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
 }
 
-
-
+.main-links a {
+  color: #9799a7;
+}
 
